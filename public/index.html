@@ -243,20 +243,25 @@
             <div>
               <p class="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">Contact</p>
               <h2 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Need a hand with something techy?</h2>
-              <p class="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">If you’re in Thornaby or nearby and want a straightforward fix, send a message and I’ll tell you the best next step.</p>
+              <p class="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">If you’re in Thornaby or nearby and want a straightforward fix, just get in touch. If you’re not sure exactly what you need, that’s absolutely fine — send a quick enquiry and I’ll help you work it out.</p>
               <div class="mt-6 space-y-3 text-sm text-muted-foreground">
                 <p>📍 Based in Thornaby, England</p>
                 <p>🧾 Fixed-price visits for common jobs</p>
-                <p>💬 Message through the form and I’ll get back to you</p>
+                <p>💬 No need to know the perfect wording — just tell me what’s going on and I’ll help from there</p>
               </div>
             </div>
             <div class="rounded-2xl border border-border bg-muted/50 p-6">
-              <p class="text-sm font-semibold text-foreground">Book a visit</p>
-              <form class="mt-5 space-y-3">
-                <input class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" type="text" placeholder="Your name" aria-label="Your name">
-                <input class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" type="email" placeholder="Email address" aria-label="Email address">
-                <textarea class="min-h-24 w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" placeholder="What do you need help with?" aria-label="What do you need help with?"></textarea>
-                <button type="button" class="inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-white/90">Send request</button>
+              <p class="text-sm font-semibold text-foreground">Ask for help</p>
+              <form id="contact-form" class="mt-5 space-y-3" action="https://formsubmit.co/hello@thehometechspecialist.edwards1997.co.uk" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New enquiry from the website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://jack-the-home-tech-specialist.github.io/?contact=sent">
+                <input class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+                <input class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+                <textarea class="min-h-24 w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" name="message" placeholder="Tell me what’s going wrong, or just say you’d like help and I’ll guide you from there" aria-label="What do you need help with?" required></textarea>
+                <button type="submit" class="inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-white/90">Send enquiry</button>
+                <p id="form-status" class="hidden rounded-xl border border-border bg-background/70 px-3 py-2 text-sm text-muted-foreground">Thanks — your message has been sent.</p>
               </form>
             </div>
           </div>
@@ -264,6 +269,22 @@
       </div>
     </section>
   </main>
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('form-status');
+      if (!form || !status) return;
+
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('contact') === 'sent') {
+        status.classList.remove('hidden');
+      }
+
+      form.addEventListener('submit', function () {
+        status.classList.remove('hidden');
+      });
+    })();
+  </script>
   <footer class="border-t border-border py-8">
     <div class="mx-auto flex max-w-5xl flex-col gap-3 px-6 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
       <p>© 2026 Jack, The Home Tech Specialist. Straightforward support for everyday technology.</p>
