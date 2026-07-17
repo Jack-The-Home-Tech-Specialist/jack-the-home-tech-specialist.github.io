@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Wi‑Fi help visit",
+    "price": "£70",
+    "description": "Router setup, weak signal issues, dead zones and slow connections.",
+    "included": [
+      "Check the router, cables, placement and basic settings",
+      "Help with poor signal in one room or across the house",
+      "Advice on boosting speed, coverage or Wi‑Fi stability"
+    ],
+    "note": "Typical visit: around 45–60 minutes. If extra equipment is needed, I’ll tell you before buying anything."
+  },
+  {
+    "title": "Laptop or PC health check",
+    "price": "£90",
+    "description": "Slow computers, updates, backups and everyday troubleshooting.",
+    "included": [
+      "Speed up a sluggish laptop or desktop",
+      "Check for updates, storage issues and missing software",
+      "Help with backup, file access and general reliability"
+    ],
+    "note": "Good for the “it’s just getting slower” sort of problem. I’ll explain what’s worth fixing and what’s not."
+  },
+  {
+    "title": "Email help and account recovery",
+    "price": "£60",
+    "description": "Outlook, Gmail, forwarding, password issues and mailbox setup.",
+    "included": [
+      "Set up email on a phone, tablet or new laptop",
+      "Help with password reset, recovery or forwarding rules",
+      "Sort out spam, inbox clutter or missing messages"
+    ],
+    "note": "Straightforward support for the sort of email problems that seem small until they become annoying."
+  },
+  {
+    "title": "Printer, phone and device setup",
+    "price": "£75",
+    "description": "Getting new kit working properly without the usual headache.",
+    "included": [
+      "Set up printers, phones, tablets or home devices",
+      "Connect things to Wi‑Fi and fix basic connection problems",
+      "Make sure the kit actually works the way it should"
+    ],
+    "note": "Perfect for new purchases, replacements or “why won’t this just connect?” moments."
+  },
+  {
+    "title": "Home office setup",
+    "price": "£120",
+    "description": "Getting your computer, printer, router and phone working together.",
+    "included": [
+      "Set up a new desk setup or tidy up a messy one",
+      "Connect devices, printer, router and email in one go",
+      "Leave you with something that is actually usable"
+    ],
+    "note": "Best when you want a few things sorted in one visit instead of piecemeal fixes."
+  }
+]

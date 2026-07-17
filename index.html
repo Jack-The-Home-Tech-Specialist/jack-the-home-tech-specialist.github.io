@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack, The Home Tech Specialist | Friendly home tech help in Thornaby, England</title>
+  <meta name="description" content="Friendly, fixed-price home tech support in Thornaby, England for Wi‑Fi, laptops, computers, printers and email — no fuss, no surprises.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23000'/><circle cx='12' cy='16' r='8' stroke='white' stroke-width='1.5' fill='none'/><circle cx='20' cy='16' r='8' stroke='white' stroke-width='1.5' fill='none'/></svg>">
+  <link rel="apple-touch-icon" href="img/og-image.png">
+  <link rel="canonical" href="https://jack-the-home-tech-specialist.github.io/">
+  <link rel="manifest" href="manifest.json">
+  <meta property="og:title" content="Jack, The Home Tech Specialist | Friendly home tech help in Thornaby, England">
+  <meta property="og:description" content="Friendly, fixed-price home tech support in Thornaby, England for Wi‑Fi, laptops, computers, printers and email — no fuss, no surprises.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jack-the-home-tech-specialist.github.io/">
+  <meta property="og:image" content="https://jack-the-home-tech-specialist.github.io/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jack, The Home Tech Specialist | Friendly home tech help in Thornaby, England">
+  <meta name="twitter:description" content="Friendly, fixed-price home tech support in Thornaby, England for Wi‑Fi, laptops, computers, printers and email — no fuss, no surprises.">
+  <meta name="twitter:image" content="https://jack-the-home-tech-specialist.github.io/img/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jack, The Home Tech Specialist",
+    "url": "https://jack-the-home-tech-specialist.github.io/",
+    "description": "Home technology support for Wi‑Fi, laptops, computers, printers and email.",
+    "telephone": "+44 7700 000000",
+    "areaServed": "Thornaby, England",
+    "priceRange": "£"
+  }
+  </script>
+  <link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    dialog[open] { display: flex; flex-direction: column; animation: modal-in 0.25s ease-out; }
+    dialog::backdrop { background: rgba(0,0,0,0.5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); animation: backdrop-in 0.25s ease-out; }
+    @keyframes modal-in { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    @keyframes backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+  <script src="js/main.js" defer></script>
+  <script src="data/pricing.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var container = document.getElementById('pricing-list');
+      if (!container) return;
+
+      var items = window.pricingData || [];
+      if (!items.length) {
+        container.innerHTML = '<p class="text-sm text-muted-foreground">Pricing information is temporarily unavailable.</p>';
+        return;
+      }
+
+      container.innerHTML = items.map(function (item) {
+        return [
+          '<details class="group rounded-2xl border border-border bg-background/70 p-5">',
+          '<summary class="flex cursor-pointer list-none flex-col gap-2 md:flex-row md:items-center md:justify-between">',
+          '<div>',
+          '<p class="text-base font-semibold text-foreground">' + item.title + ' — ' + item.price + '</p>',
+          '<p class="mt-1 text-sm text-muted-foreground">' + item.description + '</p>',
+          '</div>',
+          '<span class="text-sm font-medium text-muted-foreground group-open:text-foreground">See what’s included</span>',
+          '</summary>',
+          '<div class="mt-4 border-t border-border pt-4 text-sm leading-relaxed text-muted-foreground">',
+          '<p class="font-medium text-foreground">Included:</p>',
+          '<ul class="mt-2 space-y-2">',
+          item.included.map(function (entry) {
+            return '<li>• ' + entry + '</li>';
+          }).join(''),
+          '</ul>',
+          '<p class="mt-4">' + item.note + '</p>',
+          '</div>',
+          '</details>'
+        ].join('');
+      }).join('');
+    });
+  </script>
+</head>
+<body class="font-sans antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md">Skip to content</a>
+  <header id="main-header" class="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-md transition-[border-color] duration-300" style="border-bottom: 1px solid transparent">
+    <nav id="main-nav" class="relative mx-auto flex max-w-5xl items-center justify-between px-6 pt-12 pb-0 transition-[padding] duration-300">
+      <a href="#about" class="flex items-center gap-2 text-xl font-bold tracking-tight">
+        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1"/><circle cx="18" cy="10" r="9" stroke="currentColor" stroke-width="1"/></svg>
+        Jack, The Home Tech Specialist
+      </a>
+      <div class="hidden items-center gap-8 md:flex absolute left-1/2 -translate-x-1/2">
+        <a href="#about-trust" class="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+        <a href="#services" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
+        <a href="#pricing" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
+        <a href="#contact" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-medium text-black hover:bg-white/90 transition-opacity">Book a visit</a>
+      <button id="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" class="flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors md:hidden">
+        <span class="sr-only">Open menu</span>
+        <svg aria-hidden="true" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" aria-hidden="true" class="hidden border-t border-border bg-background px-6 py-4 md:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="#about-trust" class="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+        <a href="#services" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
+        <a href="#pricing" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
+        <a href="#contact" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="about" class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div data-animate>
+            <span class="inline-block rounded-full border border-white/20 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground">Thornaby, England based</span>
+            <h1 class="mt-5 text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">Home tech help that feels calm, clear, and properly useful.</h1>
+            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">Based in Thornaby, I help residents with Wi‑Fi, laptops, printers, computers and email — with fixed prices, sensible advice, and no faff.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#pricing" class="inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-white/90">View pricing</a>
+              <a href="#contact" class="inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm font-medium text-foreground transition hover:bg-muted">Ask for help</a>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-muted-foreground">
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-white"></span> Friendly support for everyday tech problems</li>
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-white"></span> Clear fixed prices, so you know where you stand</li>
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-white"></span> Comfortable help for people who just want it sorted</li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-border bg-muted/60 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]" data-animate data-delay="1">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">Most common fixes</p>
+            <div class="mt-6 space-y-4">
+              <div class="rounded-2xl border border-border bg-background/70 p-4">
+                <p class="text-sm font-medium text-foreground">Wi‑Fi dead zones</p>
+                <p class="mt-1 text-sm text-muted-foreground">Router placement, signal boosters, and better home networking.</p>
+              </div>
+              <div class="rounded-2xl border border-border bg-background/70 p-4">
+                <p class="text-sm font-medium text-foreground">Laptop slowdown</p>
+                <p class="mt-1 text-sm text-muted-foreground">Clean-up, updates, backups, and performance tune-ups.</p>
+              </div>
+              <div class="rounded-2xl border border-border bg-background/70 p-4">
+                <p class="text-sm font-medium text-foreground">Email confusion</p>
+                <p class="mt-1 text-sm text-muted-foreground">Setup, forwarding, spam cleanup, and account recovery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-trust" class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="rounded-3xl border border-border bg-muted/40 p-6 md:p-8" data-animate>
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">About & Trust</p>
+            <h2 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Reliable local support with a professional approach.</h2>
+            <p class="mt-4 text-lg leading-8 text-muted-foreground">I bring a strong background in professional IT and systems management to residents across Thornaby and nearby areas. The service is practical, private, and straightforward — with clear pricing from the outset.</p>
+          </div>
+          <div class="mt-8 grid gap-6 md:grid-cols-3">
+            <article class="rounded-2xl border border-border bg-background/70 p-5">
+              <p class="text-base font-semibold text-foreground">Fully insured</p>
+              <p class="mt-2 text-sm leading-7 text-muted-foreground">Comprehensive public liability and professional indemnity cover provide extra peace of mind for every visit.</p>
+            </article>
+            <article class="rounded-2xl border border-border bg-background/70 p-5">
+              <p class="text-base font-semibold text-foreground">100% on-site & private</p>
+              <p class="mt-2 text-sm leading-7 text-muted-foreground">No data is copied or held externally, and privacy is treated as a priority throughout the visit.</p>
+            </article>
+            <article class="rounded-2xl border border-border bg-background/70 p-5">
+              <p class="text-base font-semibold text-foreground">Fixed-price promise</p>
+              <p class="mt-2 text-sm leading-7 text-muted-foreground">Prices are agreed up front, with a clear no-fix, no-fee diagnostic approach where appropriate.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between" data-animate>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">Services</p>
+            <h2 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Simple support for the tech that matters most.</h2>
+          </div>
+          <p class="max-w-xl text-sm leading-relaxed text-muted-foreground">Whether you need one quick fix or help getting your whole home setup in order, we keep it practical and easy to understand.</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-border bg-muted/40 p-6" data-animate>
+            <p class="text-sm font-semibold text-foreground">Wi‑Fi improvements</p>
+            <p class="mt-3 text-sm leading-relaxed text-muted-foreground">Better coverage, faster speeds, and stronger connections in the rooms that matter most.</p>
+            <ul class="mt-5 space-y-2 text-sm text-muted-foreground">
+              <li>• Router placement and setup</li>
+              <li>• Signal boosters and mesh help</li>
+              <li>• Streaming and smart home troubleshooting</li>
+            </ul>
+          </article>
+          <article class="rounded-3xl border border-border bg-muted/40 p-6" data-animate data-delay="1">
+            <p class="text-sm font-semibold text-foreground">Laptop & computing service</p>
+            <p class="mt-3 text-sm leading-relaxed text-muted-foreground">Performance tune-ups, software updates, data backups, and everyday repairs that keep your computer usable.</p>
+            <ul class="mt-5 space-y-2 text-sm text-muted-foreground">
+              <li>• Slow computer cleanup</li>
+              <li>• Printer and device setup</li>
+              <li>• File backup and recovery help</li>
+            </ul>
+          </article>
+          <article class="rounded-3xl border border-border bg-muted/40 p-6" data-animate data-delay="2">
+            <p class="text-sm font-semibold text-foreground">Email help</p>
+            <p class="mt-3 text-sm leading-relaxed text-muted-foreground">Support for account setup, password issues, forwarding rules, spam concerns, and mailbox organization.</p>
+            <ul class="mt-5 space-y-2 text-sm text-muted-foreground">
+              <li>• Outlook, Gmail, and webmail help</li>
+              <li>• Account recovery and security checks</li>
+              <li>• Setup for new devices and phones</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="rounded-3xl border border-border bg-muted/40 p-6 md:p-8" data-animate>
+          <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">Pricing</p>
+              <h2 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">No awkward price chat. Just clear options.</h2>
+            </div>
+            <p class="max-w-xl text-sm leading-relaxed text-muted-foreground">Most jobs have a fixed price. If it’s not listed here, I’ll still give you a straight answer before I start.</p>
+          </div>
+
+          <div id="pricing-list" class="mt-8 space-y-4"></div>
+
+          <p class="mt-6 rounded-2xl border border-border bg-muted/30 p-4 text-sm text-muted-foreground">Travel is included within Thornaby and nearby areas. If you’re a bit further out, I’ll let you know before I come.</p>
+        </div>
+      </div>
+    </section>
+    <section class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="grid gap-8 md:grid-cols-3" data-animate>
+          <div class="rounded-2xl border border-border bg-muted/30 p-5"><p class="text-sm font-semibold text-foreground">1. Tell us what is going wrong</p><p class="mt-2 text-sm leading-relaxed text-muted-foreground">A quick message or call is enough to get started.</p></div>
+          <div class="rounded-2xl border border-border bg-muted/30 p-5"><p class="text-sm font-semibold text-foreground">2. We diagnose and quote</p><p class="mt-2 text-sm leading-relaxed text-muted-foreground">You’ll get a clear plan and price before any work begins.</p></div>
+          <div class="rounded-2xl border border-border bg-muted/30 p-5"><p class="text-sm font-semibold text-foreground">3. We leave it working</p><p class="mt-2 text-sm leading-relaxed text-muted-foreground">We explain what changed and how to keep it running smoothly.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-[calc(24px+4vh)]">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="rounded-3xl border border-border bg-background/70 p-8 md:p-10" data-animate>
+          <div class="grid gap-8 lg:grid-cols-[1fr_0.85fr] lg:items-center">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">Contact</p>
+              <h2 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Need a hand with something techy?</h2>
+              <p class="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">If you’re in Thornaby or nearby and want a straightforward fix, send a message and I’ll tell you the best next step.</p>
+              <div class="mt-6 space-y-3 text-sm text-muted-foreground">
+                <p>📍 Based in Thornaby, England</p>
+                <p>🧾 Fixed-price visits for common jobs</p>
+                <p>💬 Message through the form and I’ll get back to you</p>
+              </div>
+            </div>
+            <div class="rounded-2xl border border-border bg-muted/50 p-6">
+              <p class="text-sm font-semibold text-foreground">Book a visit</p>
+              <form class="mt-5 space-y-3">
+                <input class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" type="text" placeholder="Your name" aria-label="Your name">
+                <input class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" type="email" placeholder="Email address" aria-label="Email address">
+                <textarea class="min-h-24 w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none" placeholder="What do you need help with?" aria-label="What do you need help with?"></textarea>
+                <button type="button" class="inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-white/90">Send request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-border py-8">
+    <div class="mx-auto flex max-w-5xl flex-col gap-3 px-6 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
+      <p>© 2026 Jack, The Home Tech Specialist. Straightforward support for everyday technology.</p>
+      <div class="flex gap-4">
+        <a href="#about" class="hover:text-foreground transition-colors">Back to top</a>
+        <a href="#contact" class="hover:text-foreground transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

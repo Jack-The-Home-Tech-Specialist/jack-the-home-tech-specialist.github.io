@@ -1,0 +1,16 @@
+{
+  "name": "Jack, The Home Tech Specialist",
+  "short_name": "Jack Tech",
+  "description": "Friendly home tech support for Wi-Fi, laptops, printers, computers and email.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "img/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}
